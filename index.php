@@ -1,5 +1,5 @@
 <?php
-    $root = '/ICAN/gestionProjet/';
+    $root = '/ICAN/labelRock/';
 
     include "includes/head.inc.php";
     include "includes/menu.inc.php";
@@ -25,6 +25,7 @@
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
 <script src="js/menu.js"></script>
+<script src="js/slider.js"></script>
 
 </body>
 </html>

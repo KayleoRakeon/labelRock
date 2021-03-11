@@ -10,27 +10,27 @@
             <ul>
                 <li class="actif">
                     <?php include "img/picto/menu.svg"?>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
                     <?php include "img/picto/menu.svg"?>
-                    <a href="#">Actualités</a>
+                    <a href="#actu">Actualités</a>
                 </li>
                 <li>
                     <?php include "img/picto/menu.svg"?>
-                    <a href="#">Artistes</a>
+                    <a href="#artistes">Artistes</a>
                 </li>
                 <li>
                     <?php include "img/picto/menu.svg"?>
-                    <a href="#">Histoire du label</a>
+                    <a href="#histoire">Histoire du label</a>
                 </li>
                 <li>
                     <?php include "img/picto/menu.svg"?>
-                    <a href="#">Nous contacter</a>
+                    <a href="#contact">Nous contacter</a>
                 </li>
                 <li>
                     <?php include "img/picto/menu.svg"?>
-                    <a href="#">Réseaux sociaux</a>
+                    <a href="#footer">Réseaux sociaux</a>
                 </li>
             </ul>
         </nav>

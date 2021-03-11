@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   width: 100vh;
   font-family: "Montserrat", sans-serif;
@@ -23,7 +26,8 @@ nav ul li a {
   text-transform: uppercase;
   padding: 0 0 0 20px;
   box-sizing: border-box;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  transition: all 0.2s ease; }
 
 nav ul li.actif a {
   font-size: 28px; }
@@ -39,6 +43,53 @@ nav ul li.actif a {
   color: #FFFFFF;
   font-size: 22px;
   font-weight: 400; }
+
+p.titreSection {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  z-index: 50;
+  position: absolute;
+  left: 150px;
+  top: 40px; }
+
+p.menuSlider {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600; }
+
+h2 {
+  color: transparent;
+  -webkit-text-stroke: 3px #FFFFFF;
+  text-transform: uppercase;
+  font-size: 240px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-60%); }
+
+p.numero {
+  color: #5D34FF;
+  font-size: 52px;
+  font-weight: 600; }
+
+.box p:nth-child(3),
+.box p:last-child {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600; }
+
+.box p:nth-child(3) {
+  padding: 21px 0 0 0;
+  box-sizing: border-box; }
 
 .clear {
   clear: both; }
@@ -120,7 +171,8 @@ footer.musique {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  z-index: 50; }
   footer.musique article.morceau {
     width: 30%;
     display: flex;
@@ -193,3 +245,66 @@ section.home {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+section.actu {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  padding: 40px 150px 120px 150px;
+  box-sizing: border-box;
+  background: #151635;
+  overflow-x: hidden; }
+  section.actu .controller {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 40px 150px 120px 150px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 5; }
+    section.actu .controller div {
+      width: 25%;
+      padding: 0 0 32px 0;
+      box-sizing: border-box;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+      transition: all 0.2s ease-in; }
+      section.actu .controller div.actif, section.actu .controller div:hover {
+        border-bottom: 4px solid #FFFFFF; }
+  section.actu .slider {
+    width: 400%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in; }
+    section.actu .slider .box {
+      width: calc(100% / 4);
+      height: 100%;
+      padding: 180px 150px 0 150px;
+      box-sizing: border-box;
+      position: relative; }
+      section.actu .slider .box.box1 {
+        background-image: url("../img/photo/slide1.jpg");
+        background-position: center bottom;
+        background-size: cover; }
+      section.actu .slider .box.box2 {
+        background-image: url("../img/photo/slide2.jpg");
+        background-position: center center;
+        background-size: cover; }
+      section.actu .slider .box.box3 {
+        background-image: url("../img/photo/slide3.jpg");
+        background-position: center bottom;
+        background-size: cover; }
+      section.actu .slider .box.box4 {
+        background-image: url("../img/photo/slide4.jpg");
+        background-position: center bottom;
+        background-size: cover; }

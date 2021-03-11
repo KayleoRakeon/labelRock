@@ -1,0 +1,79 @@
+section.actu{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    padding:40px 150px 120px 150px;
+    box-sizing:border-box;
+    background:$sombre;
+    overflow-x:hidden;
+
+    .controller{
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        top:0;
+        padding:40px 150px 120px 150px;
+        box-sizing:border-box;
+        display:flex;
+        justify-content:center;
+        align-items:flex-end;
+        z-index:5;
+
+        div{
+            width:25%;
+            padding:0 0 32px 0;
+            box-sizing:border-box;
+            border-bottom:2px solid rgba(255,255,255,0.5);
+            cursor:pointer;
+            transition: all 0.2s ease-in;
+
+            &.actif,
+            &:hover{
+                border-bottom:4px solid $blanc;
+            }
+        }
+    }
+
+    .slider{
+        width:400%;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
+        position:absolute;
+        left:0;
+        top:0;
+        z-index:1;
+        transition:all 0.3s ease-in;
+
+        .box{
+            width:calc(100% / 4);
+            height:100%;
+            padding:180px 150px 0 150px;
+            box-sizing:border-box;
+            position:relative;
+
+            &.box1{
+                background-image:url('../img/photo/slide1.jpg');
+                background-position:center bottom;
+                background-size:cover;
+            }
+            &.box2{
+                background-image:url('../img/photo/slide2.jpg');
+                background-position:center center;
+                background-size:cover;
+            }
+            &.box3{
+                background-image:url('../img/photo/slide3.jpg');
+                background-position:center bottom;
+                background-size:cover;
+            }
+            &.box4{
+                background-image:url('../img/photo/slide4.jpg');
+                background-position:center bottom;
+                background-size:cover;
+            }
+        }
+    }
+}
