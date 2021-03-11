@@ -1,14 +1,16 @@
-<section class="histoire">
-    
+<section class="histoire" id="histoire">
+<div></div>
     <p class="titreSection">Notre histoire</p>
 
     <h3 class="label">Labe<span>l</span></h3>
 
+
+
     <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Doloribus quas earum assumenda consectetur iste iusto vitae quasi distinctio, fuga deleniti ab accusantium autem vel incidunt amet quia. Velit, illo cumque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam ipsum iusto harum! Placeat, est odio ex doloribus itaque laborum consequuntur rem ducimus dolores quaerat possimus id reiciendis illum non quasi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Rock’N Love  est un label indépendant, créé en 2009, qui distribue ses groupes et artistes en France et à l'International, dans les réseaux professionnels de distribution, en bacs dans les magasins, en VPC et en digital sur toutes les plateformes de téléchargement légal.</p>
     </div>
 
-    <button>En savoir plus</button>
+    <button>En savoir plus <?php include "img/picto/fleche.svg"?></button>
 
 </section>

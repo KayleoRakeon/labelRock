@@ -91,3 +91,38 @@ p.numero{
     padding:21px 0 0 0;
     box-sizing:border-box;
 }
+section.histoire h3{
+    color:transparent;
+    -webkit-text-stroke:3px $bleu;
+    text-transform:uppercase;
+    font-size:410px;
+    font-weight:600;
+    text-align:center;
+    position:absolute;
+    left:110px;
+    top:35%;
+    transform:translateY(-60%);
+
+    span{
+        -webkit-text-stroke:3px $blanc;
+    }
+}
+section.histoire div p:nth-child(1){
+        color: $blanc;
+        font-weight: bold;
+        font-size: 44px;
+        z-index: 8;
+}
+section.histoire div p:nth-child(2){
+    color: $blanc;
+    margin-top: 40px;
+    font-size: 22px;
+    z-index: 8;
+}
+section.histoire div:nth-child(3){
+    width: 10px;
+    height: 10px;
+    background: $blanc;
+    position: absolute;
+}
+

@@ -91,6 +91,38 @@ p.numero {
   padding: 21px 0 0 0;
   box-sizing: border-box; }
 
+section.histoire h3 {
+  color: transparent;
+  -webkit-text-stroke: 3px #5D34FF;
+  text-transform: uppercase;
+  font-size: 410px;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  left: 110px;
+  top: 35%;
+  transform: translateY(-60%); }
+  section.histoire h3 span {
+    -webkit-text-stroke: 3px #FFFFFF; }
+
+section.histoire div p:nth-child(1) {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 44px;
+  z-index: 8; }
+
+section.histoire div p:nth-child(2) {
+  color: #FFFFFF;
+  margin-top: 40px;
+  font-size: 22px;
+  z-index: 8; }
+
+section.histoire div:nth-child(3) {
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  position: absolute; }
+
 .clear {
   clear: both; }
 
@@ -345,3 +377,51 @@ section.allArtiste {
       height: 50%;
       background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(20px); }
+
+section.histoire {
+  width: 100vw;
+  position: relative;
+  padding: 40px 150px 80px 150px;
+  box-sizing: border-box;
+  background: #151635;
+  z-index: 0;
+  background-image: url(../img/photo/histoire.jpg);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  section.histoire img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 75%; }
+  section.histoire div:nth-child(1) {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background: #5D34FF;
+    top: 0;
+    right: 0; }
+  section.histoire div:nth-child(4) {
+    margin-top: 35%;
+    width: 38%;
+    z-index: 8; }
+  section.histoire button {
+    margin: auto;
+    padding: 0;
+    border: none;
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    padding-left: 2vw;
+    color: #FFFFFF;
+    background: #151635;
+    font-size: 18px; }
+    section.histoire button svg {
+      background: #5D34FF;
+      fill: #FFFFFF;
+      width: 2vw;
+      padding: 1vh 1.5vw;
+      margin-left: 2vw; }
+
+/*# sourceMappingURL=style.css.map */

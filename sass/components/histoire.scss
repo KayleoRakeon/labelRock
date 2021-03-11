@@ -1,0 +1,57 @@
+section.histoire{
+    width:100vw;
+
+    position:relative;
+    padding:40px 150px 80px 150px;
+    box-sizing:border-box;
+    background:$sombre;
+    z-index: 0;
+    background-image: url(../img/photo/histoire.jpg);
+
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+img{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 75%;
+}
+div:nth-child(1){
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background: $bleu;
+    top: 0;
+    right: 0;
+}
+    div:nth-child(4){
+        margin-top: 35%;
+        width: 38%;
+        z-index: 8;
+    }
+
+    button{
+        margin: auto;
+        padding: 0;
+        border: none;
+        display: flex;
+        margin-top: 5%;
+        align-items: center;
+        padding-left: 2vw;
+        color: $blanc;
+        background: $sombre;
+        font-size: 18px;
+
+        svg{
+            background: $bleu;
+            fill: $blanc;
+            width: 2vw;
+            padding: 1vh 1.5vw;
+            margin-left: 2vw;
+        }
+    }
+}
+
