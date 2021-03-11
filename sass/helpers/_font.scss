@@ -1,0 +1,39 @@
+h1{
+    color:$blanc;
+    text-transform:uppercase;
+    font-size:170px;
+    font-weight:600;
+
+    span{
+        color:transparent;
+        -webkit-text-stroke:3px $blanc;
+    }
+}
+
+nav ul li a{
+    text-decoration:none;
+    font-size:24px;
+    font-weight:400;
+    text-transform:uppercase;
+    padding:0 0 0 20px;
+    box-sizing:border-box;
+    color:$blanc;
+}
+
+nav ul li.actif a{
+    font-size:28px;
+}
+
+.morceau div p{
+    font-size:18px;
+    line-height:21px;
+    color:$blanc;
+    padding:0 0 0 17px;
+    box-sizing:border-box;
+}
+
+.temps p{
+    color:$blanc;
+    font-size:22px;
+    font-weight:400;
+}

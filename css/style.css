@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  width: 100vh;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; }
+
+h1 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 170px;
+  font-weight: 600; }
+  h1 span {
+    color: transparent;
+    -webkit-text-stroke: 3px #FFFFFF; }
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
+  color: #FFFFFF; }
+
+nav ul li.actif a {
+  font-size: 28px; }
+
+.morceau div p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 0 0 0 17px;
+  box-sizing: border-box; }
+
+.temps p {
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 400; }
+
+.clear {
+  clear: both; }
+
+header {
+  width: 100%;
+  height: auto;
+  background: transparent; }
+  header div {
+    width: 100%;
+    height: auto;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; }
+    header div svg {
+      width: 50px; }
+      header div svg:last-child {
+        transition: all 0.3s ease-in; }
+        header div svg:last-child.actif {
+          transform: rotate(135deg); }
+          header div svg:last-child.actif rect {
+            fill: #FFFFFF; }
+  header nav {
+    width: calc(100% / 3);
+    height: calc(100vh - 80px);
+    position: fixed;
+    right: -100%;
+    top: 0;
+    backdrop-filter: blur(20px);
+    background: rgba(15, 16, 35, 0.9);
+    padding: 158px 80px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in;
+    z-index: 9; }
+    header nav.actif {
+      right: 0; }
+    header nav ul {
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start; }
+      header nav ul li {
+        display: flex;
+        align-items: center;
+        opacity: 0.5;
+        padding: 0 0 0 20px;
+        box-sizing: border-box;
+        transition: all 0.2s ease-in; }
+        header nav ul li.actif {
+          opacity: 1;
+          padding: 0; }
+        header nav ul li svg {
+          transform-origin: center center;
+          transform: rotate(45deg);
+          width: 20px; }
+          header nav ul li svg rect {
+            fill: #FFFFFF; }
+        header nav ul li:hover {
+          opacity: 1; }
+
+footer.musique {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  footer.musique article.morceau {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    footer.musique article.morceau .pochette {
+      width: 50px;
+      height: 50px;
+      background: #5D34FF;
+      border-radius: 5px; }
+  footer.musique article.controls {
+    width: 220px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer.musique article.controls svg {
+      height: 16px; }
+    footer.musique article.controls .play,
+    footer.musique article.controls .pause {
+      width: 45px;
+      height: 45px;
+      background: #5D34FF;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      footer.musique article.controls .play svg,
+      footer.musique article.controls .pause svg {
+        height: 18px; }
+      footer.musique article.controls .play.hide,
+      footer.musique article.controls .pause.hide {
+        display: none; }
+  footer.musique article.temps {
+    width: auto; }
+  footer.musique article.volume {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer.musique article.volume svg {
+      width: 20px;
+      margin: 0 25px 0 0; }
+    footer.musique article.volume input[type="range"] {
+      -webkit-appearance: none;
+      width: 125px;
+      height: 4px; }
+    footer.musique article.volume input[type="range"]:focus {
+      outline: none; }
+    footer.musique article.volume input[type="range"]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 5px;
+      border-radius: 5px;
+      background: #5D34FF; }
+    footer.musique article.volume input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 22px;
+      height: 22px;
+      background: #5D34FF;
+      border: 2px solid #FFFFFF;
+      border-radius: 50px;
+      transform: translateY(-8px); }
+
+section.home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/photo/chanteuse.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
