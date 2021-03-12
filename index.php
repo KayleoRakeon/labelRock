@@ -1,5 +1,9 @@
 <?php
-    $root = '/ICAN/labelRock/';
+    // LOCAL
+    // $root = '/ICAN/labelRock/';
+
+    // ONLINE
+    $root = '';
 
     include "includes/head.inc.php";
     include "includes/menu.inc.php";
