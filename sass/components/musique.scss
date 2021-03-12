@@ -2,7 +2,7 @@ footer.musique{
 	width:100%;
 	height:80px;
 	position:fixed;
-	left:0;
+	right:0;
 	bottom:0;
 	backdrop-filter:blur(20px);
 	background:rgba(255,255,255,0.1);
@@ -11,6 +11,8 @@ footer.musique{
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
+	z-index:50;
+	transition:all 0.3s ease-in;
 
 	article{
 		&.morceau{
@@ -102,6 +104,33 @@ footer.musique{
 			&:hover{
 				cursor: pointer;
 			}
+		}
+	}
+
+	&.onScroll{
+		width:calc(100% / 3);
+
+		.morceau{
+			width:auto;
+		}
+
+		.controls{
+			width:auto;
+			justify-content:center;
+
+			svg{
+				display:none;
+			}
+
+			.play{
+				svg{
+					display:block;
+				}
+			}
+		}
+
+		.temps{
+			display:none;
 		}
 	}
 }

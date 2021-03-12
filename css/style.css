@@ -174,17 +174,19 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10; }
-    header div svg {
+    z-index: 50; }
+    header div svg:first-child {
+      width: 100px; }
+    header div svg:last-child {
       width: 50px; }
-      header div svg:hover {
-        cursor: pointer; }
-      header div svg:last-child {
-        transition: all 0.3s ease-in; }
-        header div svg:last-child.actif {
-          transform: rotate(135deg); }
-          header div svg:last-child.actif rect {
-            fill: #FFFFFF; }
+      header div svg:last-child rect {
+        fill: #FFFFFF; }
+    header div svg:hover {
+      cursor: pointer; }
+    header div svg:last-child {
+      transition: all 0.3s ease-in; }
+      header div svg:last-child.actif {
+        transform: rotate(135deg); }
   header nav {
     width: calc(100% / 3);
     height: calc(100vh - 80px);
@@ -230,7 +232,7 @@ footer.musique {
   width: 100%;
   height: 80px;
   position: fixed;
-  left: 0;
+  right: 0;
   bottom: 0;
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.1);
@@ -238,7 +240,9 @@ footer.musique {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  z-index: 50;
+  transition: all 0.3s ease-in; }
   footer.musique article.morceau {
     width: 30%;
     display: flex;
@@ -303,6 +307,19 @@ footer.musique {
       transform: translateY(-8px); }
   footer.musique article svg:hover {
     cursor: pointer; }
+  footer.musique.onScroll {
+    width: calc(100% / 3); }
+    footer.musique.onScroll .morceau {
+      width: auto; }
+    footer.musique.onScroll .controls {
+      width: auto;
+      justify-content: center; }
+      footer.musique.onScroll .controls svg {
+        display: none; }
+      footer.musique.onScroll .controls .play svg {
+        display: block; }
+    footer.musique.onScroll .temps {
+      display: none; }
 
 section.home {
   width: 100vw;
@@ -680,5 +697,3 @@ footer.footer {
     footer.footer div:first-of-type p {
       position: absolute;
       right: 100px; }
-
-/*# sourceMappingURL=style.css.map */
