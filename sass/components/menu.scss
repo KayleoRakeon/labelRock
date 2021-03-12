@@ -18,6 +18,10 @@ header{
 
         svg{
             width:50px;
+			
+			&:hover{
+				cursor: pointer;
+			}
 
             &:last-child{
                 transition:all 0.3s ease-in;

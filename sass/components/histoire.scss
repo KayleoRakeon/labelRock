@@ -86,6 +86,7 @@ div:nth-child(1){
             }
 
             &:hover{
+				cursor: pointer;
                 &::after{
                     right:0;
                     width:100%;

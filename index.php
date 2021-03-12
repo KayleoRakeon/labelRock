@@ -3,12 +3,12 @@
 
     include "includes/head.inc.php";
     include "includes/menu.inc.php";
+    include "includes/musique.inc.php";
 ?>
 
 <main>
 
 <?php
-    include "includes/musique.inc.php";
     include "includes/home.inc.php";
     include "includes/actu.inc.php";
     include "includes/artiste.inc.php";

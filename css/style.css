@@ -177,6 +177,8 @@ header {
     z-index: 10; }
     header div svg {
       width: 50px; }
+      header div svg:hover {
+        cursor: pointer; }
       header div svg:last-child {
         transition: all 0.3s ease-in; }
         header div svg:last-child.actif {
@@ -299,6 +301,8 @@ footer.musique {
       border: 2px solid #FFFFFF;
       border-radius: 50px;
       transform: translateY(-8px); }
+  footer.musique article svg:hover {
+    cursor: pointer; }
 
 section.home {
   width: 100vw;
@@ -490,6 +494,8 @@ section.allArtiste {
             align-items: center; }
             section.allArtiste .artiste .details .smallControls div .play svg {
               transform: translateX(15%); }
+      section.allArtiste .artiste .details svg:hover {
+        cursor: pointer; }
     section.allArtiste .artiste:hover {
       flex: 1.5; }
       section.allArtiste .artiste:hover h3 {
@@ -572,7 +578,107 @@ section.histoire {
         font-size: 20px;
         transition: all 0.3s ease-in;
         z-index: 0; }
-      section.histoire .bouton button:hover::after {
-        right: 0;
-        width: 100%;
-        color: transparent; }
+      section.histoire .bouton button:hover {
+        cursor: pointer; }
+        section.histoire .bouton button:hover::after {
+          right: 0;
+          width: 100%;
+          color: transparent; }
+
+section.contact {
+  width: 100vw;
+  min-height: 800px;
+  max-height: auto;
+  position: relative;
+  padding: 0 0;
+  box-sizing: border-box;
+  background: linear-gradient(#2f2d3a, #151635);
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  section.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 800px; }
+    section.contact form .focus {
+      color: white;
+      background: #5D34FF;
+      border: 1px solid white;
+      margin: 9px; }
+      section.contact form .focus::placeholder {
+        text-transform: uppercase;
+        color: lightgray; }
+      section.contact form .focus:focus::placeholder {
+        color: white; }
+    section.contact form input, section.contact form textarea {
+      border: none;
+      background-image: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      background: #151635;
+      padding: 20px;
+      margin: 10px;
+      font-size: 20px;
+      color: white;
+      border-radius: 4px; }
+      section.contact form input::placeholder, section.contact form textarea::placeholder {
+        text-transform: uppercase;
+        color: grey; }
+      section.contact form input:focus, section.contact form textarea:focus {
+        text-transform: none;
+        background: #5D34FF;
+        border: 1px solid white;
+        margin: 9px; }
+        section.contact form input:focus::placeholder, section.contact form textarea:focus::placeholder {
+          color: lightgray; }
+    section.contact form textarea {
+      min-height: 200px;
+      min-width: calc(800px - 60px); }
+    section.contact form div:first-of-type {
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      section.contact form div:first-of-type input {
+        width: calc((100% / 2) - 10px); }
+  section.contact button {
+    background: #151635;
+    color: lightgray;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    border: none; }
+    section.contact button:hover {
+      background: #5D34FF;
+      color: white;
+      border: 1px solid white;
+      border-radius: 4px;
+      margin: 9px;
+      cursor: pointer;
+      transition-timing-function: ease-out; }
+
+footer.footer {
+  width: 100vw;
+  min-height: 200px;
+  background: #151635; }
+  footer.footer hr {
+    color: white;
+    margin-bottom: 30px; }
+  footer.footer div:first-of-type {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px; }
+    footer.footer div:first-of-type div a {
+      margin: 0 15px; }
+    footer.footer div:first-of-type p {
+      position: absolute;
+      right: 100px; }
+
+/*# sourceMappingURL=style.css.map */

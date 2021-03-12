@@ -1,7 +1,9 @@
 <body>
     <header>
         <div>
+<!--           <a href="#"> -->
             <?php include "img/picto/logo.svg"?>
+<!--           </a>-->
 
             <?php include "img/picto/menu.svg"?>
         </div>
