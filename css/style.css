@@ -91,6 +91,39 @@ p.numero {
   padding: 21px 0 0 0;
   box-sizing: border-box; }
 
+.artiste h3 {
+  color: #FFFFFF;
+  font-size: 62px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  right: -30px;
+  bottom: 200px;
+  transform: rotate(-90deg);
+  transition: all 0.3s ease-in; }
+
+.bold {
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 600; }
+
+.details p:nth-child(2) {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0 0 0;
+  margin: 0 0 68px 0;
+  box-sizing: border-box;
+  position: relative; }
+  .details p:nth-child(2)::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: -34px; }
+
 section.histoire h3 {
   color: transparent;
   -webkit-text-stroke: 3px #5D34FF;
@@ -100,7 +133,7 @@ section.histoire h3 {
   text-align: center;
   position: absolute;
   left: 110px;
-  top: 35%;
+  top: 30%;
   transform: translateY(-60%); }
   section.histoire h3 span {
     -webkit-text-stroke: 3px #FFFFFF; }
@@ -203,8 +236,7 @@ footer.musique {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  z-index: 50; }
+  align-items: center; }
   footer.musique article.morceau {
     width: 30%;
     display: flex;
@@ -353,33 +385,122 @@ section.allArtiste {
     height: 100%;
     position: relative;
     flex: 1.25;
-    transition: all 0.3s ease-in; }
+    transition: all 0.3s ease-in;
+    overflow-y: hidden; }
     section.allArtiste .artiste.rockR {
       background-image: url("../img/photo/artiste1.jpg");
       background-position: center left;
-      background-size: cover; }
+      background-size: cover;
+      z-index: 5; }
+      section.allArtiste .artiste.rockR::before {
+        content: "R";
+        color: transparent;
+        -webkit-text-stroke: 3px #FFFFFF;
+        font-size: 400px;
+        font-weight: 600;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left: -15%;
+        z-index: 5; }
     section.allArtiste .artiste.rockO {
       background-image: url("../img/photo/artiste2.jpg");
       background-position: center center;
-      background-size: cover; }
+      background-size: cover;
+      z-index: 4; }
+      section.allArtiste .artiste.rockO::before {
+        content: "O";
+        color: transparent;
+        -webkit-text-stroke: 3px #FFFFFF;
+        font-size: 400px;
+        font-weight: 600;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left: -15%;
+        z-index: 4; }
     section.allArtiste .artiste.rockC {
       background-image: url("../img/photo/artiste3.jpg");
       background-position: center center;
-      background-size: cover; }
+      background-size: cover;
+      z-index: 3; }
+      section.allArtiste .artiste.rockC::before {
+        content: "C";
+        color: transparent;
+        -webkit-text-stroke: 3px #FFFFFF;
+        font-size: 400px;
+        font-weight: 600;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left: -15%;
+        z-index: 3; }
     section.allArtiste .artiste.rockK {
       background-image: url("../img/photo/artiste4.jpg");
       background-position: center center;
-      background-size: cover; }
-    section.allArtiste .artiste:hover {
-      flex: 1.5; }
+      background-size: cover;
+      z-index: 2; }
+      section.allArtiste .artiste.rockK::before {
+        content: "K";
+        color: transparent;
+        -webkit-text-stroke: 3px #FFFFFF;
+        font-size: 400px;
+        font-weight: 600;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left: -15%;
+        z-index: 2; }
     section.allArtiste .artiste .details {
       width: 100%;
-      height: 50%;
+      height: 40%;
       background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(20px); }
+      backdrop-filter: blur(20px);
+      position: absolute;
+      bottom: -40%;
+      left: 0;
+      padding: 17px 40px 0 40px;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in; }
+      section.allArtiste .artiste .details .smallControls {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0 0 0;
+        box-sizing: border-box; }
+        section.allArtiste .artiste .details .smallControls div {
+          width: 50%;
+          height: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          section.allArtiste .artiste .details .smallControls div .play {
+            width: 45px;
+            height: 45px;
+            border-radius: 50px;
+            background: #5D34FF;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            section.allArtiste .artiste .details .smallControls div .play svg {
+              transform: translateX(15%); }
+    section.allArtiste .artiste:hover {
+      flex: 1.5; }
+      section.allArtiste .artiste:hover h3 {
+        right: -50px;
+        color: transparent; }
+      section.allArtiste .artiste:hover .details {
+        bottom: 0; }
 
 section.histoire {
   width: 100vw;
+  height: 100vh;
   position: relative;
   padding: 40px 150px 80px 150px;
   box-sizing: border-box;
@@ -401,27 +522,57 @@ section.histoire {
     height: 100%;
     background: #5D34FF;
     top: 0;
-    right: 0; }
+    right: 0;
+    z-index: 0; }
   section.histoire div:nth-child(4) {
-    margin-top: 35%;
+    padding-top: 30%;
+    box-sizing: border-box;
     width: 38%;
     z-index: 8; }
-  section.histoire button {
-    margin: auto;
-    padding: 0;
-    border: none;
+  section.histoire .bouton {
+    width: 100%;
     display: flex;
-    margin-top: 5%;
-    align-items: center;
-    padding-left: 2vw;
-    color: #FFFFFF;
-    background: #151635;
-    font-size: 18px; }
-    section.histoire button svg {
-      background: #5D34FF;
-      fill: #FFFFFF;
-      width: 2vw;
-      padding: 1vh 1.5vw;
-      margin-left: 2vw; }
-
-/*# sourceMappingURL=style.css.map */
+    justify-content: center; }
+    section.histoire .bouton button {
+      margin: 3% auto 0 auto;
+      padding: 20px 50px;
+      box-sizing: border-box;
+      border: none;
+      color: transparent;
+      background: #151635;
+      font-size: 18px;
+      position: relative; }
+      section.histoire .bouton button::before {
+        content: "En savoir plus";
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1; }
+      section.histoire .bouton button::after {
+        content: ">";
+        height: 100%;
+        width: 90px;
+        background: #5D34FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: -90px;
+        top: 0;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 20px;
+        transition: all 0.3s ease-in;
+        z-index: 0; }
+      section.histoire .bouton button:hover::after {
+        right: 0;
+        width: 100%;
+        color: transparent; }

@@ -1,5 +1,6 @@
 section.histoire{
     width:100vw;
+    height:100vh;
 
     position:relative;
     padding:40px 150px 80px 150px;
@@ -26,31 +27,71 @@ div:nth-child(1){
     background: $bleu;
     top: 0;
     right: 0;
+    z-index:0;
 }
     div:nth-child(4){
-        margin-top: 35%;
+        padding-top: 30%;
+        box-sizing:border-box;
         width: 38%;
         z-index: 8;
     }
 
-    button{
-        margin: auto;
-        padding: 0;
-        border: none;
-        display: flex;
-        margin-top: 5%;
-        align-items: center;
-        padding-left: 2vw;
-        color: $blanc;
-        background: $sombre;
-        font-size: 18px;
+    .bouton{
+        width:100%;
+        display:flex;
+        justify-content:center;
 
-        svg{
-            background: $bleu;
-            fill: $blanc;
-            width: 2vw;
-            padding: 1vh 1.5vw;
-            margin-left: 2vw;
+        button{
+            margin: 3% auto 0 auto;
+            padding: 20px 50px;
+            box-sizing:border-box;
+            border: none;
+            color: transparent;
+            background: $sombre;
+            font-size: 18px;
+            position:relative;
+
+            &::before{
+                content:"En savoir plus";
+                width:100%;
+                height:100%;
+                background:transparent;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                font-size:18px;
+                color:$blanc;
+                position:absolute;
+                left:0;
+                top:0;
+                z-index:1;
+            }
+
+            &::after{
+                content:">";
+                height:100%;
+                width:90px;
+                background:$bleu;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                position:absolute;
+                right:-90px;
+                top:0;
+                color:$blanc;
+                font-weight:700;
+                font-size:20px;
+                transition:all 0.3s ease-in;
+                z-index:0;
+            }
+
+            &:hover{
+                &::after{
+                    right:0;
+                    width:100%;
+                    color:transparent;
+                }
+            }
         }
     }
 }
