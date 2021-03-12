@@ -103,6 +103,10 @@ section.allArtiste{
 			height:40%;
 			background:rgba(255,255,255,0.1);
 			backdrop-filter:blur(20px);
+            -webkit-backdrop-filter:blur(20px);
+            -moz-backdrop-filter:blur(20px);
+            -ms-backdrop-filter:blur(20px);
+            -o-backdrop-filter:blur(20px);
 			position:absolute;
 			bottom:-40%;
 			left:0;

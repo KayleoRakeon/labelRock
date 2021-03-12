@@ -50,6 +50,10 @@ header{
         right:-100%;
         top:0;
         backdrop-filter:blur(20px);
+        -webkit-backdrop-filter:blur(20px);
+        -moz-backdrop-filter:blur(20px);
+        -ms-backdrop-filter:blur(20px);
+        -o-backdrop-filter:blur(20px);
         background:rgba(15,16,35,0.9);
         padding:158px 80px;
         box-sizing:border-box;

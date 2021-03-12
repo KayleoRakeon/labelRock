@@ -5,6 +5,10 @@ footer.musique{
 	right:0;
 	bottom:0;
 	backdrop-filter:blur(20px);
+	-webkit-backdrop-filter:blur(20px);
+	-moz-backdrop-filter:blur(20px);
+	-ms-backdrop-filter:blur(20px);
+	-o-backdrop-filter:blur(20px);
 	background:rgba(255,255,255,0.1);
 	padding:15px 40px;
 	box-sizing:border-box;

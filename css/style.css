@@ -194,6 +194,10 @@ header {
     right: -100%;
     top: 0;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
+    -ms-backdrop-filter: blur(20px);
+    -o-backdrop-filter: blur(20px);
     background: rgba(15, 16, 35, 0.9);
     padding: 158px 80px;
     box-sizing: border-box;
@@ -235,6 +239,10 @@ footer.musique {
   right: 0;
   bottom: 0;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  -moz-backdrop-filter: blur(20px);
+  -ms-backdrop-filter: blur(20px);
+  -o-backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.1);
   padding: 15px 40px;
   box-sizing: border-box;
@@ -481,6 +489,10 @@ section.allArtiste {
       height: 40%;
       background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      -moz-backdrop-filter: blur(20px);
+      -ms-backdrop-filter: blur(20px);
+      -o-backdrop-filter: blur(20px);
       position: absolute;
       bottom: -40%;
       left: 0;
