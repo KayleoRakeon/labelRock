@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title -->
-    <title>TITRE A CHANGER</title>
+    <title>Rock'n Love</title>
 
     <!-- Link -->
     <link rel="stylesheet" href="<?=$root?>css/style.css">
